@@ -145,7 +145,8 @@ const BlogEntry1 = () => (
       <a href="https://musicmaker-teacher.netlify.com/">Frontend</a> 
       and 
       <a href="https://musicmaker-4b2e8.firebaseapp.com/">Backend</a> 
-      deployments so far!
+      deployments so far! And here's proof of the user db existing: 
+      <img src="https://puu.sh/BZ3Ex/3433a8750e.png" alt="list of users" />
     </p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
