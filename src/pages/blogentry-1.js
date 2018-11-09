@@ -15,7 +15,7 @@ const BlogEntry1 = () => (
     </p>
     <p>
       Check out my contributions (Github handle keirankozlowski) here on the contribution graph.
-      <img src="https://puu.sh/BZ20T/88598d7d81.png" />
+      <img src="https://puu.sh/BZ20T/88598d7d81.png" alt="contribution graph"/>
     </p>
     <p>
       I think that our group so far is pretty solid. It's been interesting to have 
@@ -55,10 +55,10 @@ const BlogEntry1 = () => (
             <li><a href="https://github.com/Lambda-School-Labs/Labs8-MusicMaker/pull/14">Github PR</a></li>
             <li><a href="https://trello.com/c/ltx35skc/65-set-up-authorization-related-front-end-views">Trello Card</a></li>
           </ul>
-          <ul> Ticket 3
+          {/* <ul> Ticket 3
             <li><a href="">Github PR</a></li>
             <li><a href="">Trello Card</a></li>
-          </ul>
+          </ul> */}
       </div>
       <div>
         <h2>Backend</h2>
@@ -104,38 +104,38 @@ const BlogEntry1 = () => (
 
       First, let's look at the App.js component.
       <br />
-      <div><img src="https://puu.sh/BZ1HM/9c1e8877de.png" /></div>
+      <div><img src="https://puu.sh/BZ1HM/9c1e8877de.png" alt="app.js component"/></div>
       <br />
       
       Currently, I just set up basic routing and imported the Navigation component. 
       Clearly, this will be more complex as we progress into the assignment. Next, let's 
       look at the signupView.js component. 
       <br />
-      <div><img src="https://puu.sh/BZ1Pl/74df916fdf.png" /></div>
+      <div><img src="https://puu.sh/BZ1Pl/74df916fdf.png" alt="signupView.js component"/></div>
       <br />
       
       Users can enter an email and password to sign up. However, there are a few checks 
       in place. First, users have to enter a properly formatted email address.
       <br />
-      <div><img src="https://puu.sh/BZ1NL/bc58f6440b.png" /></div>
+      <div><img src="https://puu.sh/BZ1NL/bc58f6440b.png" alt="email format check"/></div>
       <br />
       
       Second, passwords must be at least 6 characters.
       <br />
-      <div><img src="https://puu.sh/BZ1TT/0713307db6.png" /></div>
+      <div><img src="https://puu.sh/BZ1TT/0713307db6.png" alt="password character count check"/></div>
       <br />
       
       Once a proper email and password are entered, users are redirected to the landing page and granted 
       authorization for other pages. As you can see, the navigation shifts to a new view 
       protected by user authorization.
       <br />
-      <div><img src="https://puu.sh/BZ1Wr/f6c62f04e1.png" /></div>
+      <div><img src="https://puu.sh/BZ1Wr/f6c62f04e1.png" alt="authorized nav view"/></div>
       <br />
 
       This shift of view for the authorization is primarily done through a small higher order component 
       called withAuthentication.js. 
       <br />
-      <div><img src="https://puu.sh/BZ2kq/c65ddd2251.png" /></div>
+      <div><img src="https://puu.sh/BZ2kq/c65ddd2251.png" alt="withAuthentication.js higher order component"/></div>
       <br />
       This higher order component essentially checks against the Firestore for a matching user from the signin, 
       and if there is designates the user as authenticated.
