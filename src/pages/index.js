@@ -9,6 +9,7 @@ const IndexPage = () => (
     <Link to="/blogentry-1/">Go to Blog Post 1.</Link>
     <Link to="/blogentry-2/">Go to Blog Post 2.</Link>
     <Link to="/blogentry-3/">Go to Blog Post 3.</Link>
+    <Link to="/blogentry-4/">Go to Blog Post 4.</Link>
   </Layout>
 )
 
